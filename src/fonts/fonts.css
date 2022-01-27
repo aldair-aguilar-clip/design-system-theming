@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Averta'), url('./Averta-Regular.woff2') format('woff2'),
+    url('./Averta-Regular.woff') format('woff'),
+    url('./Averta-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Averta'), url('./Averta-SemiBold.woff2') format('woff2'),
+    url('./Averta-SemiBold.woff') format('woff'),
+    url('./Averta-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Averta'), url('./Averta-Bold.woff2') format('woff2'),
+    url('./Averta-Bold.woff') format('woff'),
+    url('./Averta-Bold.ttf') format('truetype');
+}

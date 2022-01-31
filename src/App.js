@@ -2,6 +2,21 @@ import './App.css';
 import { Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
 
+import { styled } from '@mui/material/styles';
+
+const Root = styled('div')(({ theme }) => ({
+  padding: theme.spacing(1),
+  [theme.breakpoints.down('tablet')]: {
+    backgroundColor: theme.palette.primary.main,
+  },
+  [theme.breakpoints.up('tablet')]: {
+    backgroundColor: theme.palette.success.main,
+  },
+  [theme.breakpoints.up('desktop')]: {
+    backgroundColor: theme.palette.warning.main,
+  },
+}));
+
 function App() {
   return (
     <div className='App'>
@@ -145,6 +160,11 @@ function App() {
         c2 - Regular ▚ Clip is Extraordinary
       </Typography>
       <Divider />
+      <Root>
+        <Typography>down(md): red</Typography>
+        <Typography>up(md): blue</Typography>
+        <Typography>up(lg): green</Typography>
+      </Root>
     </div>
   );
 }

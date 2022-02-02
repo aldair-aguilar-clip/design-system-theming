@@ -4,8 +4,8 @@
 export default {
   breakpoints: {
     values: {
-      mobile: 320,
-      tablet: 768,
+      mobile: 0,
+      tablet: 769,
       desktop: 1025,
       large: 1367,
     },
